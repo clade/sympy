@@ -78,7 +78,7 @@ class InnerProduct(Expr):
         if not isinstance(ket, KetBase):
             raise TypeError('KetBase subclass expected, got: %r' % ket)
         if not isinstance(bra, BraBase):
-            raise TypeError('BraBase subclass expected, got: %r' % ket)
+            raise TypeError('BraBase subclass expected, got: %r' % bra)
         obj = Expr.__new__(cls, bra, ket)
         return obj
 
